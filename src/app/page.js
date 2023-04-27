@@ -1,9 +1,21 @@
+import Banner from "@/components/server/banner"
+import About from "@/components/server/about"
+import Services from "@/components/server/services"
+import Quote from "@/components/server/quote"
+import Portfolio from "@/components/server/portfolio"
+import Blog from "@/components/server/blog"
+import ContactUs from "@/components/server/contactUs"
 
 export default function Home() {
   return (
-    <>
-   <h1>hello word</h1>
-    <h2>this main content</h2>
-  </>
+    <div>
+    <Banner></Banner>
+    {/* <About></About>
+    <Services></Services>
+    <Quote></Quote> */}
+    {/* <Portfolio></Portfolio> */}
+    {/* <Blog></Blog>
+    <ContactUs></ContactUs> */}
+  </div>
   )
 }
