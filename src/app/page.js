@@ -1,21 +1,31 @@
+"use server"
+
 import Banner from "@/components/server/banner"
 import About from "@/components/server/about"
 import Services from "@/components/server/services"
 import Quote from "@/components/server/quote"
-import Portfolio from "@/components/server/portfolio"
 import Blog from "@/components/server/blog"
 import ContactUs from "@/components/server/contactUs"
+import Preloader from "@/components/client/preloader"
+import Portfolio from "@/components/client/portfolio"
 
-export default function Home() {
+
+
+export default async function Home() {
+
   return (
     <div>
-    <Banner></Banner>
-    {/* <About></About>
-    <Services></Services>
-    <Quote></Quote> */}
-    {/* <Portfolio></Portfolio> */}
-    {/* <Blog></Blog>
-    <ContactUs></ContactUs> */}
+        <Preloader></Preloader>
+        <Banner></Banner>
+        {/* <About></About>
+        <Services></Services>
+        <Quote></Quote>
+        <Portfolio></Portfolio>
+        <Blog></Blog>
+        <ContactUs></ContactUs>  */}
   </div>
   )
 }
+
+
+

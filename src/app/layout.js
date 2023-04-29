@@ -22,10 +22,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+  
+
         <Header></Header>
         { children }
         <Footer></Footer>
-        
+
         <Script src='/js/jquery.min.js'></Script>
         <Script src='/js/jquery.slim.js'></Script>
         <Script src='/js/animation.js'></Script>
@@ -34,6 +36,7 @@ export default function RootLayout({ children }) {
         <Script src='/js/isotope.js'></Script>
         <Script src='/js/tabs.js'></Script>
         <Script src='/js/owl-carousel.js'></Script>
+ 
       
       </body>
     </html>
