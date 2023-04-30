@@ -10,7 +10,7 @@ import "../../public/css/animated.css"
 
 import Script from 'next/script'
 
-import Header from '@/components/server/header'
+import Header from '@/components/client/header'
 import Footer from '@/components/server/footer'
 
 export const metadata = {
