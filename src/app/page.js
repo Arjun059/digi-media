@@ -2,7 +2,7 @@
 
 import Banner from "@/components/server/banner"
 import About from "@/components/server/about"
-import Services from "@/components/server/services"
+import Services from "@/components/client/services"
 import Quote from "@/components/server/quote"
 import Blog from "@/components/server/blog"
 import ContactUs from "@/components/server/contactUs"
@@ -17,8 +17,8 @@ export default async function Home() {
     <div>
         <Preloader></Preloader>
         <Banner></Banner>
-        {/* <About></About>
-        <Services></Services>
+        <About></About>
+        {/* <Services></Services>
         <Quote></Quote>
         <Portfolio></Portfolio>
         <Blog></Blog>

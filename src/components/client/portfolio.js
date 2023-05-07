@@ -60,7 +60,7 @@ export default function Portfolio() {
 
 
        
-              {/* <div class="loop owl-carousel"> */}
+              <div style={{overflow: "hidden"}} >
               <Slider {...settings}>
                 <div class="">
                   <a href="#">
@@ -141,7 +141,7 @@ export default function Portfolio() {
                   </a>  
                 </div>
                 </Slider>
-              {/* </div> */}
+              </div>
       </>
     )
 }

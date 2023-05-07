@@ -1,6 +1,11 @@
 
+"use client"
+
+import { useState, useEffect, useRef } from "react"
 
 export default function Services() {
+
+  const [activeTab , setActiveTab] = useState("Apartments")
 
     return (
         <div id="services" class="services section">
@@ -19,31 +24,31 @@ export default function Services() {
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="menu">
-                        <div class="first-thumb active">
+                        <div className={ activeTab == "Apartments" ? "active first-thumb " : "first-thumb" } onClick={() => setActiveTab("Apartments")}>
                           <div class="thumb">
                             <span class="icon"><img src="/images/service-icon-01.png" alt="" /></span>
                             Apartments
                           </div>
                         </div>
-                        <div>
+                        <div className={ activeTab == "FoodLife" ? "active" : "" } onClick={() => setActiveTab("FoodLife")}>
                           <div class="thumb">                 
                             <span class="icon"><img src="/images/service-icon-02.png" alt="" /></span>
                             Food &amp; Life
                           </div>
                         </div>
-                        <div>
+                        <div className={ activeTab == "Cars" ? "active" : "" } onClick={() => setActiveTab("Cars")}>
                           <div class="thumb">                 
                             <span class="icon"><img src="/images/service-icon-03.png" alt="" /></span>
                             Cars
                           </div>
                         </div>
-                        <div>
+                        <div className={ activeTab == "Shopping" ? "active" : "" } onClick={() => setActiveTab("Shopping")}>
                           <div class="thumb">                 
                             <span class="icon"><img src="/images/service-icon-04.png" alt="" /></span>
                             Shopping
                           </div>
                         </div>
-                        <div class="last-thumb">
+                        <div className={ activeTab == "Traveling" ? "active last-thumb " : "last-thumb" } onClick={() => setActiveTab("Traveling")}>
                           <div class="thumb">                 
                             <span class="icon"><img src="/images/service-icon-01.png" alt="" /></span>
                             Traveling
@@ -53,7 +58,7 @@ export default function Services() {
                     </div> 
                     <div class="col-lg-12">
                       <ul class="nacc">
-                        <li class="active">
+                        <li className={activeTab == "Apartments" ? "active" : ""}>
                           <div>
                             <div class="thumb">
                               <div class="row">
@@ -76,7 +81,7 @@ export default function Services() {
                             </div>
                           </div>
                         </li>
-                        <li>
+                        <li className={activeTab == "FoodLife" ? "active" : ""}>
                           <div>
                             <div class="thumb">
                               <div class="row">
@@ -99,7 +104,7 @@ export default function Services() {
                             </div>
                           </div>
                         </li>
-                        <li>
+                        <li className={activeTab == "Cars" ? "active" : ""}>
                           <div>
                             <div class="thumb">
                               <div class="row">
@@ -122,7 +127,7 @@ export default function Services() {
                             </div>
                           </div>
                         </li>
-                        <li>
+                        <li className={activeTab == "Shopping" ? "active" : ""}>
                           <div>
                             <div class="thumb">
                               <div class="row">
@@ -145,7 +150,7 @@ export default function Services() {
                             </div>
                           </div>
                         </li>
-                        <li>
+                        <li className={activeTab == "Traveling" ? "active" : ""}>
                           <div>
                             <div class="thumb">
                               <div class="row">
