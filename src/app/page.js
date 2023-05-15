@@ -18,8 +18,8 @@ export default async function Home() {
         <Preloader></Preloader>
         <Banner></Banner>
         <About></About>
-        {/* <Services></Services>
-        <Quote></Quote>
+        <Services></Services>
+        {/* <Quote></Quote>
         <Portfolio></Portfolio>
         <Blog></Blog>
         <ContactUs></ContactUs>  */}
