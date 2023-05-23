@@ -19,8 +19,8 @@ export default async function Home() {
         <Banner></Banner>
         <About></About>
         <Services></Services>
-        {/* <Quote></Quote>
-        <Portfolio></Portfolio>
+        <Quote></Quote>
+        {/* <Portfolio></Portfolio>
         <Blog></Blog>
         <ContactUs></ContactUs>  */}
   </div>
