@@ -21,8 +21,8 @@ export default async function Home() {
         <Services></Services>
         <Quote></Quote>
         <Portfolio></Portfolio>
-        {/* <Blog></Blog>
-        <ContactUs></ContactUs>  */}
+        {/* <Blog></Blog> */}
+        <ContactUs></ContactUs> 
   </div>
   )
 }
